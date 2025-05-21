@@ -1,0 +1,124 @@
+1. Clase: -Student
+          -Inscriere
+          -Seminar 
+          -Profesor
+
+Clasa Student
+atribute : -nume
+          -adresa
+          -nrTelefon
+          -email
+          -IDstudent
+          -mediaNotelor
+operatii/metode : - +esteEligibilInscriere() //publica
+                 - +getSeminariiAlese() //publica
+
+Clasa Inscriere :
+atribute : -notePrimite
+operatii/metode : - +getMediaLaZi() //publica
+                  - +getNotaFinala() //publica
+
+Clasa Seminar:
+atribute : -nume
+           -IDseminar
+           -taxe
+operatii/metode : - +addStudent() //publica
+                  - +dropStudent() //publica
+
+Clasa Profesor:
+atribute : -nume 
+           -adresa
+           -nrTelefon
+           -email
+           -salar
+
+Clasa Student e legata de clasa Inscriere printr-o relatie de asociere.
+Are multiplicitatile : Student->Inscriere: 1..*
+                       Inscriere->Student: 1
+Un student poate avea mai multe inscrieri iar o inscriere poate fi facuta de un singur student.
+
+Clasa Student e legata de clasa Seminar printr o relatie de asociere.
+Are multiplicitatile: 0..*
+                      0..*
+
+Clasa Seminare legata de clasa Profesor printr o relatie de asociere.
+Are multiplicitatile: 0..1
+                      0..*
+
+Comentariul de final explica de ce multiplicitatea dentre Seminar si Profesor e 0..1.
+
+2.   
+public class Carte {
+    String editor;
+    String dataPublicare;
+    String ISBN;
+    List<Parti> parti = new ArrayList<>();
+
+    public String getEditor() { return editor; }
+    public void setEditor(String editor) { this.editor = editor; }
+
+    public String getDataPublicare() { return dataPublicare; }
+    public void setDataPublicare(String dataPublicare) { this.dataPublicare = dataPublicare; }
+
+    public String getISBN() { return ISBN; }
+    public void setISBN(String ISBN) { this.ISBN = ISBN; }
+
+    public List<Parti> getParti() { return parti; }
+    public void adaugaParte(Parti parte) {
+        parti.add(parte);
+    }
+}
+
+
+class Parti {
+    String titlu;
+    String numar;
+    List<Capitole> capitole = new ArrayList<>();
+
+    public String getTitlu() { return titlu; }
+    public void setTitlu(String titlu) { this.titlu = titlu; }
+
+    public String getNumar() { return numar; }
+    public void setNumar(String numar) { this.numar = numar; }
+
+    public List<Capitole> getCapitole() { return capitole; }
+    public void adaugaCapitol(Capitole capitol) {
+        capitole.add(capitol);
+    }
+}
+
+
+
+class Capitole {
+    String titlu;
+    String numar;
+    String rezumat;
+    List<Sectiuni> sectiuni = new ArrayList<>();
+
+    public String getTitlu() { return titlu; }
+    public void setTitlu(String titlu) { this.titlu = titlu; }
+
+    public String getNumar() { return numar; }
+    public void setNumar(String numar) { this.numar = numar; }
+
+    public String getRezumat() { return rezumat; }
+    public void setRezumat(String rezumat) { this.rezumat = rezumat; }
+
+    public List<Sectiuni> getSectiuni() { return sectiuni; }
+    public void adaugaSectiune(Sectiuni sectiune) {
+        sectiuni.add(sectiune);
+    }
+}
+
+
+
+class Sectiuni {
+    String titlu;
+    String numar;
+
+    public String getTitlu() { return titlu; }
+    public void setTitlu(String titlu) { this.titlu = titlu; }
+
+    public String getNumar() { return numar; }
+    public void setNumar(String numar) { this.numar = numar; }
+} 

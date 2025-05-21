@@ -1,0 +1,122 @@
+ex4
+
+public class Companie {
+    List<Departament> departments = new ArrayList<>();
+}
+public class Departament {
+    Angajat manager;
+    List<Birou> offices = new ArrayList<>();
+    List<Angajat> employees = new ArrayList<>();
+}
+public class Birou {
+    String location;
+    boolean isHeadquarter;
+}
+public class Angajat {
+    String nume;
+}
+----------------------------------------------------------------
+ex5-a
+
+public class Retea {
+    List<Nod> noduri = new ArrayList<>();
+}
+public abstract class Nod {
+    String nume;
+    Nod urmator;
+    List<Pachet> buffer = new ArrayList<>();
+}
+public class StatieLucru extends Nod {
+
+}
+public class Imprimanta extends Nod {
+
+}
+public class Server extends Nod {
+
+}
+public class Pachet {
+    int destinatie;  
+    String continut; 
+    String origine;  
+}
+-----------------------------------------------------------------
+ex5-b
+
+public class Retea {
+    List<Nod> noduri = new ArrayList<>();
+}
+public abstract class Nod {
+    String nume;
+    Nod urmator;
+    List<Pachet> buffer = new ArrayList<>();
+}
+public class StatieLucru extends Nod {
+
+}
+public abstract class Imprimanta extends Nod {
+
+}
+public class ASCII extends Imprimanta {
+
+}
+public class PostScript extends Imprimanta {
+
+}
+public class Server extends Nod {
+
+}
+public class Pachet {
+    int destinatie;
+    String continut;
+    String origine;
+    Document document;
+}
+public abstract class Document {
+
+}
+public class DocASCII extends Document {
+
+}
+public class DocPostScript extends Document {
+
+}
+-------------------------------------------------------------------
+ex2-corectat
+
+public abstract class Class2 {
+    protected String titlu;
+    protected int numar;
+
+    public Class2(String titlu, int numar) {
+        this.titlu = titlu;
+        this.numar = numar;
+    }
+}
+public class Parti extends Class2 {
+    List<Sectiuni> sectiuni = new ArrayList<>();
+
+    public Parti(String titlu, int numar) {
+        super(titlu, numar);
+    }
+}
+public class Capitole extends Class2 {
+    String rezumat;
+    List<Sectiuni> sectiuni = new ArrayList<>();
+
+    public Capitole(String titlu, int numar, String rezumat) {
+        super(titlu, numar);
+        this.rezumat = rezumat;
+    }
+}
+public class Sectiuni {
+    String titlu;
+    int numar;
+
+    public Sectiuni(String titlu, int numar) {
+        this.titlu = titlu;
+        this.numar = numar;
+    }
+}
+
+
