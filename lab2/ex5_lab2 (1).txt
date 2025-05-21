@@ -1,0 +1,27 @@
+(1) Identificarea actorilor:
+-Profesor
+-Student
+-Student cu Taxa
+-Secretara
+
+(2) 
+"Student cu Taxa" e un tip special de "Student", iar relatia dintre cei doi este o generalizare.
+
+(3) Identificarea cazurilor de utilizare:
+-Inregistrare note
+-Vizualizare note
+-Autentificare in sistem
+-Re-autentificare
+-Generare rapoarte
+-Distribuire rapoarte
+
+(4)
+"Autentificaer in sistem" este necesara inainte ca un utilizator sa poata accesa "Vizualizare note"; <<include>>
+"Re-autentificare" se intampla numai daca autentificarea nu se indeplineste; <<include>>
+
+(5)  
+"Distribuire rapoarte" este folosit uneori dupa "Generare rapoarte"(dar nu mereu); <<extend>>
+
+(6)
+
+ 
