@@ -1,0 +1,13 @@
+Laborator 8
+
+ex1:
+1. Afiseaza ecran inregistrare:
+   Sistemul afiseaza ecranul de inregistrare cu campurile: nume, prenume, email si parola pentru utilizator.
+2. Introducere date client:
+   Utilizatorul isi introduce datele in sistem, iar acesta valideaza formatul campurilor. Daca sunt invalide, atunci utilizatorul primeste un mesaj de avertizare.
+3. Trimitere inregistrare:
+   Sistemul verifica unicitatea email-ului si a CNP-ului in baza de date.
+4. Afiseaza confirmarea inregistrarii:
+   Sistemul trimite un email de confirmare catre utilizator, iar sistemul salveaza contul si trimite un email de activitate.
+
+Cazul de utilizare se incheie.
