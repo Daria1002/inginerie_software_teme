@@ -1,0 +1,31 @@
+2.Ce este UML și pentru ce este utilizat?
+
+UML (Unified Modeling Language) este un limbaj de modelare standardizat utilizat pentru specificarea, vizualizarea, proiectarea și documentarea sistemelor software.
+
+3.Ce sunt modelele și care este utilitatea lor?
+
+Un model este o reprezentare abstracta a unui sistem, fenomen sau concept din lumea reala. 
+Modelele ajuta la intelegerea, proiectarea si imbunatatirea unui sistem
+
+5.Ce tipuri de diagrame sunt prezentate în [1] – Capitolul 2? Care sunt asemănarile și
+deosebirile?
+
+Diagramele prezentate in carte la capitolul 2 sunt: 
+-the class diagram
+-the object diagram
+-the package diagram
+-the component diagram
+-the composition structure diagram
+-the deployment diagram
+-the profile diagram
+
+Asemanari: Toate sunt diagrame structurale UML, descriind aspecte statice ale sistemului.
+
+Deosebiri: Fiecare diagrama reprezinta un alt aspect al sistemului: structura, organizare, distributie sau extindere UML.
+
+6.
+The class diagram: reprezinta structura sistemului prin clase, atribute, metode si relatii;
+Use Case Diagram: arata interactiunile utilizatorilor cu sistemul si functionalitatile disponibile;
+State Machine Diagram: modeleaza starile unui obiect si tranzitiile dintre ele;
+Activity Diagram: descrie fluxurile de activitati si procese;
+Sequence Diagram: reprezinta interactiunile dintre obiecte in ordine cronologica;
